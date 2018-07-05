@@ -4,27 +4,20 @@ import org.apache.log4j.Logger;
 import repository.CarDataRepo;
 import service.CarService;
 import service.RentalCarServiceImpl;
-
-
 import service.RentalCarCache;
 import utils.JsonUtils;
-
 import static utils.AppConfigUtility.getValue;
 
 import java.util.List;
 
 
 public class RentalCarApp {
-
     static CarService rentalCarService = new RentalCarServiceImpl();
     static RentalCarCache vehicleDataService = new RentalCarCache();
     static List<CarDataRepo> carJsonList  = vehicleDataService.getJsonCacheList();
-
-
     final  static Logger logger = Logger.getLogger(RentalCarApp.class);
 
     public static void main(String[] args) {
-
         //Question 1 :
         displayNotes(carJsonList,getValue("carTeslaMake"),getValue("carTeslaBlue"));
 

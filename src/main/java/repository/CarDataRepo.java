@@ -1,5 +1,8 @@
 package repository;
 
+/**
+ * Json Data Object Cache for analysis the json Nodes 
+ */
 public class CarDataRepo {
 
     //metrics object

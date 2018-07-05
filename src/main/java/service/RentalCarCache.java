@@ -11,7 +11,6 @@ import static utils.AppConfigUtility.getValue;
 public class RentalCarCache {
     static Cars car = null;
     static List<CarDataRepo> jsonCacheList = new LinkedList<>();
-
     public static List<CarDataRepo> getJsonCacheList() {
         return jsonCacheList;
     }
