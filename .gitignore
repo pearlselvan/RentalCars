@@ -5,10 +5,13 @@
 gradle-app.setting
 
 #ignore application logs 
-logs/application.log 
+#logs/application.log 
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
 !gradle-wrapper.jar
+
+#out directory
+out
 
 # Cache of project
 .gradletasknamecache
